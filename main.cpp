@@ -58,12 +58,12 @@ int main(int argc, char** argv) {
     vf rotxy = xrot * vy;
     vf rotxz = xrot * vz;
     
-    string rotxx_str = to_string(rotxx);
-    string rotxy_str = to_string(rotxy);
-    string rotxz_str = to_string(rotxz);
-    cout << "rotxx = " << rotxx_str << '\n';
-    cout << "rotxy = " << rotxy_str << '\n';
-    cout << "rotxz = " << rotxz_str << '\n';
+    string str_rotxx("rotxx = ");
+    string str_rotxy("rotxy = ");
+    string str_rotxz("rotxz = ");
+    print_out(rotxx, str_rotxx);
+    print_out(rotxy, str_rotxy);
+    print_out(rotxz, str_rotxz);
     
     vf rotzy_z = zrot * yrot * vz;
     string rotzy_z_str = to_string(rotzy_z);
